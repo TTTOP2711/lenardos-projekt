@@ -1,0 +1,14 @@
+div#hello-world {
+    background-color: red;
+}
+div.italic {
+    font-style: italic;
+}
+div.bold {
+    font-weight: bold;
+    height: 50%;
+    width: 50%;
+
+
+
+}
