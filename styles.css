@@ -1,12 +1,9 @@
-
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 2px;
-    
+    gap: 2px;   
 }
-    
 .div1 {
     grid-column: span 3 / span 3;           /*3 Spalten und 3 Spalten*/
     border: 5px solid #dd0000;
@@ -19,20 +16,65 @@
     font-weight: bold;
     color: #dd0000;
 }
-
 .div2 {
     grid-column-start: 4;                   /*das ist die 4. Spalte*/
     text-align: center;
 }
-
+.icon-button {
+    width: 100px;
+    height: 100px;
+    background: rgba(232, 94, 94, 0.9);   /*Hintergrundfarbe des Knopfes*/
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+.icon-button img {
+    width: 75px;
+    height: 75px;
+    border-radius: 6px;
+}
 .div3 {
     grid-column-start: 5;
-    text-align: center;
-    font-size: 25px;
-
-    
+    text-align: center; 
 }
-
+.icon-buttonnav  {
+    background: rgba(232, 94, 94, 0.9);   /*Hintergrundfarbe des Knopfes*/
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 100px;
+    font-size: 75px;
+    display:flex;
+ }   
+.nav_text {
+    font-size: 20px;
+    color:red;
+    text-align: left;
+    list-style-type: none;
+}
+/* --- Profil-Menü --- */
+.profile-dialog {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 1500;
+ }
+.profile-dialog h4 {
+    margin: 5px 0;
+}
+.profile-dialog input {
+    width: 100%;
+    margin-top: 5px;
+}
 .div4 {
     grid-column: span 5 / span 5;
     grid-row-start: 2;
@@ -40,7 +82,6 @@
     border-radius: 15px;
     box-shadow: 1px 1px 39px #dd0000;
 }
-
 .div5 {
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
@@ -49,7 +90,6 @@
     border-radius: 15px;
     box-shadow: 1px 1px 39px #dd0000;
 }
-
 .div6 {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
@@ -58,5 +98,4 @@
     border: 5px solid #dd0000;
     border-radius: 15px;
     box-shadow: 1px 1px 39px #dd0000;
-}
-        
+}  
